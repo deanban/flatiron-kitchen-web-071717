@@ -1,0 +1,6 @@
+<h1>Recipes</h1>
+<ul>
+<% @recipes.map do |i| %>
+	<li><%= link_to("#{i.name}", edit_recipe_path(i)) %></li>
+<% end %>
+</ul>
